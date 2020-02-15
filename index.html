@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sky Without Stars</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Sky Without Stars</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Главная" onclick="slowScroll('#main')">Главная</a>
+      <a href="#" onclick="slowScroll('#overview')" title="">Стадии засветки</a>
+      <a href="#" onclick="slowScroll('#RES')" title="Причины">Причины</a>
+      <a href="#" onclick="slowScroll('#map')" title="Карта засветки">Карта засветки</a>
+      <a href="#" onclick="slowScroll('#CON')" title="Последствия">Последствия</a>
+      <a href="#" onclick="slowScroll('#CAN')" title="Контакты">Контакты</a>
+    </div>
+  </header>
+  <div id="top">
+  	<h1>Световое загрязнение</h1>
+  </div>
+  <div id="main">
+  	<div class="intro">
+  		<h2>Что такое световое загрязнение?</h2>
+  	</div>
+  	<div class="text">
+  		<span>Световое загрязнение (засветка) — засвечивание ночного неба искусственными источниками освещения, свет которых рассеивается в нижних слоях атмосферы, мешая проведению астрономических наблюдений и изменяя биоритмы живых существ. Иногда это явление также называют световым смогом. </span>
+  	</div>
+  </div>
+    <div id="overview">
+    <h2>Стадии святовой засветки</h2>
+    <h4>С Первой по Восьмую</h4>
+    <div class="img">
+      <img src=" 8.png" alt="">
+      <span> Восьмая стадия  </span>
+    </div>
+    <div class="img">
+      <img src=" 7.png" alt="">
+      <span>Седьмая стадия </span>
+    </div>
+    <div class="img">
+      <img src=" 6.png" alt="">
+      <span> Шестая стадия</span>
+    </div>
+    <div class="img">
+      <img src=" 5.png" alt="">
+      <span>Пятая стадия</span>
+    </div>
+    <div class="img">
+      <img src=" 4.png" alt="">
+      <span>Четвертая стадия</span>
+    </div>
+    <div class="img">
+      <img src=" 3.png" alt="">
+      <span> Третья стадия</span>
+    </div>
+    <div class="img">
+      <img src=" 2.png" alt="">
+      <span> Вторая стадия</span>
+    </div>
+    <div class="img">
+      <img src=" 1.png" alt="">
+      <span> Первая стадия</span>
+    </div>
+    </div>
+  <div id="RES">
+  	<div class="QWE">
+  		<h2>Причины</h2>
+  	</div>
+  	<div class="EWQ">
+  		  <span>Основными источниками светового загрязнения являются крупные города и промышленные комплексы. Световое загрязнение создаётся уличным освещением, светящимися рекламными щитами или прожекторами. В Европе многие дискотеки направляют мощные пучки света в ночное небо.</span>
+  	</div>
+  </div>
+    <div id="map">
+    	<h2>Карта световой засветки</h2>
+    	<div class="omg">
+    		<img src="45.png" alt="">
+    	</div>
+    </div>
+  <div id="CON">
+  	<div class="rty">
+  		<h2>Последствия </h2>
+  	</div>
+  	<div class="ytr">
+  		 <ul>
+  		 	<li>Влияние на здоровье человека и психику</li>
+  		 	<li>Нарушения в экосистемах</li>
+  		 	<li>Последствия в астрономии</li>
+  		 	<li>Загрязнение атмосферы</li>
+  		 	<li>Уменьшение природной поляризации неба</li>
+  		 </ul>
+  	</div>
+  	  </div>
+  	  <div id="ex">
+  	  	
+  	  	<div class="gil">
+  	  		<img src="98.png" alt="">
+  	  		 
+  	  	</div>
+  	  	<div class="gil">
+  	  		<img src="97.png" alt="">
+  	  		 
+  	  	</div>
+  	  </div>
+  	  <div id="CAN">
+  	<div class="intro">
+  		<h2>Контакты</h2>
+  	</div>
+  	<div class="text">
+  		 <p><span style="color: #000000;"> Inst: <span style="color: #000080;"><a style="color: #000080;" href="https://bit.ly/2S9wTN4">https://bit.ly/2S9wTN4</a></span></span></p>
+  		 <p><span style="color: #000000;">E-mail: <span style="color: #000080;"><a style="color: #000080;" href="#">sky.without.stars01@gmail.com</a></span></span></p>
+  	</div>
+  </div>
+  <p>Edited by D.S.</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+    $(document).on("scroll", function()
+    {
+    	if ($(window).scrollTop() === 0)
+    		$("header").removeClass("fixed");
+    	else
+    		$("header").attr("class","fixed");
+    });
+
+    
+  </script>
+</body>
+</html>
+ 
